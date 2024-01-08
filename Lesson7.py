@@ -28,12 +28,12 @@
 # Список передається як параметр. Отриманий результат повертається із функції.
 
 import random
-def create_list_with_random_numbers(list_length=10, start_number=1, end_number=10) -> list:
+def create_list_random(list_length=10, start_number=1, end_number=10) -> list:
     new_list = []
     for _ in range(list_length):
         new_list.append(random.randint(start_number, end_number))
     return new_list
-numbers = create_list_with_random_numbers()
+numbers = create_list_random()
 print(f"Список ",numbers)
 def mult(numbers):
     mult = 1
@@ -46,3 +46,17 @@ print(f"Добуток елементів списку ",multi)
 # Завдання 2
 # Напишіть функцію для знаходження мінімуму у списку цілих.
 # Список передається як параметр. Отриманий результат повертається із функції.
+
+import random
+def create_list_random(list_length=10, start_number=1, end_number=10) -> list:
+    new_list = []
+    for _ in range(list_length):
+        new_list.append(random.randint(start_number, end_number))
+    return new_list
+numbers = create_list_random()
+print(f"Список ",numbers)
+def find_min(numbers):
+    min_number = min(numbers)
+    return min_number
+result_min = find_min(numbers)
+print(f"Мінімум ",result_min)
