@@ -26,3 +26,21 @@
 # Завдання 1
 # Напишіть функцію, яка обчислює добуток елементів списку цілих.
 # Список передається як параметр. Отриманий результат повертається із функції.
+
+import random
+def create_list_with_random_numbers(list_length=10, start_number=1, end_number=10) -> list:
+    new_list = []
+    for _ in range(list_length):
+        new_list.append(random.randint(start_number, end_number))
+    return new_list
+numbers = create_list_with_random_numbers()
+print(f"Список ",numbers)
+def mult(numbers):
+    mult = 1
+    for i in range(len(numbers)):
+        mult *= numbers[i]
+    return mult
+multi = mult(numbers)
+print(f"Добуток елементів списку ",multi)
+
+
