@@ -47,7 +47,6 @@ print(f"Добуток елементів списку ",multi)
 # Напишіть функцію для знаходження мінімуму у списку цілих.
 # Список передається як параметр. Отриманий результат повертається із функції.
 
-import random
 def create_list_random(list_length=10, start_number=1, end_number=10) -> list:
     new_list = []
     for _ in range(list_length):
@@ -64,4 +63,28 @@ print(f"Мінімум ",result_min)
 # Завдання 3
 # Напишіть функцію, яка визначає кількість простих чисел у списку цілих.
 # Список передається як параметр. Отриманий результат повертається із функції.
+
+def create_list_random(list_length=10, start_number=1, end_number=10) -> list:
+    new_list = []
+    for _ in range(list_length):
+        new_list.append(random.randint(start_number, end_number))
+    return new_list
+numbers = create_list_random()
+print(f"Список ",numbers)
+
+def find_prime_number(numbers):
+    count = 0
+    for num in numbers:
+        if num < 2:
+            continue
+        is_simple = True
+        for i in range(2, int(num**0.5) + 1):
+            if num % i == 0:
+                is_simple = False
+                break
+        if is_simple:
+            count += 1
+    return count
+add_sum = find_prime_number(numbers)
+print(f"Кількість простих чисел: ",add_sum)
 

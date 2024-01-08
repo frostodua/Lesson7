@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58c93ef0-4015-43df-a690-67efcc63059a" name="Changes" comment="add task2 commit">
+    <list default="true" id="58c93ef0-4015-43df-a690-67efcc63059a" name="Changes" comment="add task3 commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lesson7.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson7.py" afterDir="false" />
     </list>
@@ -42,7 +42,7 @@
     "Python.Lesson7.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "feature/task2"
+    "git-widget-placeholder": "feature/task3"
   }
 }]]></component>
   <component name="SharedIndexes">
@@ -93,7 +93,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704743626466</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add task3 commit">
+      <option name="closed" value="true" />
+      <created>1704744931213</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1704744931213</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -112,6 +120,7 @@
     <MESSAGE value="add tasks commit" />
     <MESSAGE value="add tasks1 commit" />
     <MESSAGE value="add task2 commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="add task2 commit" />
+    <MESSAGE value="add task3 commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="add task3 commit" />
   </component>
 </project>
