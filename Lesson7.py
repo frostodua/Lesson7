@@ -100,15 +100,25 @@ def create_list_random(list_length=10, start_number=1, end_number=10) -> list:
 numbers = create_list_random()
 print(f"Список ",numbers)
 
-def remove_number(numbers, num_target):
+def count_number(numbers, num_target):
     count_removed_num = numbers.count(num_target)
-    # numbers = numbers.remove("num_target","")
     return count_removed_num
 
+def get_new_numbers(numbers):
+    new_numbers = []
+    # for number_to_remove in numbers:
+    #     if numbers.count(number_to_remove) == 0:
+    #         print("Немає цього числа у списку")
+    for i in numbers:
+        if i != number_to_remove:
+            new_numbers.append(i)
+    return new_numbers
+
 number_to_remove = int(input("Введіть число ", ))
-removed_count = remove_number(numbers, number_to_remove)
-# print(f"Нова строка: ",numbers)
-print(f"Кількість видалених елементів: ",removed_count)
+new_numbers = get_new_numbers(numbers)
+counted_numbers = count_number(numbers, number_to_remove)
+print(f"Нова строка: ",new_numbers)
+print(f"Кількість видалених елементів: ",counted_numbers)
 
 
 
