@@ -124,3 +124,20 @@ print(f"Кількість видалених елементів: ",counted_numb
 # Напишіть функцію, яка отримує два списки як параметр і повертає список,
 # що містить елементи обох списків.
 
+def create_list_random(list_length=10, start_number=1, end_number=10) -> list:
+    new_list = []
+    for _ in range(list_length):
+        new_list.append(random.randint(start_number, end_number))
+    return new_list
+
+numbers_1 = create_list_random()
+numbers_2 = create_list_random()
+print(f"Список 1 ",numbers_1)
+print(f"Список 2 ",numbers_2)
+
+def add(numbers_1,numbers_2):
+    return numbers_1 + numbers_2
+
+add_numbers = add(numbers_1,numbers_2)
+print("Загальний список ",add_numbers)
+
