@@ -162,3 +162,4 @@ def degree_of_elements(numbers,degree):
 degree = int(input("Введіть число ", ))
 result_numbers = degree_of_elements(numbers,degree)
 print("Ступінь кожного елемента ",result_numbers)
+# print("Thats all, folks!")
