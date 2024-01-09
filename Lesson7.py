@@ -120,5 +120,7 @@ counted_numbers = count_number(numbers, number_to_remove)
 print(f"Нова строка: ",new_numbers)
 print(f"Кількість видалених елементів: ",counted_numbers)
 
-
+# Завдання 5
+# Напишіть функцію, яка отримує два списки як параметр і повертає список,
+# що містить елементи обох списків.
 
