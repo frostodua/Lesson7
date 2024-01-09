@@ -141,3 +141,24 @@ def add(numbers_1,numbers_2):
 add_numbers = add(numbers_1,numbers_2)
 print("Загальний список ",add_numbers)
 
+# Завдання 6
+# Напишіть функцію, яка обчислює ступінь кожного елемента списку цілих.
+# Значення для ступеня передається як параметр, список також передається як параметр.
+# Функція повертає новий список, який містить отримані результати.
+
+def create_list_random(list_length=10, start_number=1, end_number=10) -> list:
+    new_list = []
+    for _ in range(list_length):
+        new_list.append(random.randint(start_number, end_number))
+    return new_list
+
+numbers = create_list_random()
+print(f"Список ",numbers)
+
+def degree_of_elements(numbers,degree):
+    result_numbers = [num**degree for num in numbers]
+    return result_numbers
+
+degree = int(input("Введіть число ", ))
+result_numbers = degree_of_elements(numbers,degree)
+print("Ступінь кожного елемента ",result_numbers)
